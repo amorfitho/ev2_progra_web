@@ -251,7 +251,49 @@
         </div>
       </nav>
     </header>
-    
+    <!--tabla-->
+
+    <table id="data-table" class="table table-striped table-hover mt-5">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  
+    <script>
+      const form = $('.subscription-form');
+      const tableBody = $('#data-table tbody');
+  
+      form.on('submit', (event) => {
+        event.preventDefault();
+  
+        const email = $('#email').val();
+        const password = $('#password').val();
+  
+        const existingRow = tableBody.find('tr').filter((index, row) => {
+          const rowEmail = $(row).find('td:first').text();
+          const rowPassword = $(row).find('td:nth-child(2)').text();
+  
+          return rowEmail === email && rowPassword === password;
+        });
+  
+        if (existingRow.length === 0) {
+          const newRow = $('<tr>').append(
+            $('<td>').text(email),
+            $('<td>').text(password)
+          );
+  
+          tableBody.append(newRow);
+        } else {
+          alert('Duplicate data detected!');
+        }
+      });
+    </script>
+
+
 
 
     <!--FOOTER-->
