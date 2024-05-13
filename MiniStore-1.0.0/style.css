@@ -1019,3 +1019,8 @@ figure.instagram-item img.insta-image {
 .post-navigation:focus svg {
     fill: var(--primary-color);
 }
+
+h2{
+  display: flex;
+  text-align: justify;
+}
