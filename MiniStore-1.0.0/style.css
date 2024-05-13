@@ -1020,7 +1020,6 @@ figure.instagram-item img.insta-image {
     fill: var(--primary-color);
 }
 
-h2{
-  display: flex;
-  text-align: justify;
+.margare{
+  padding-top: 7em;
 }
