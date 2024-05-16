@@ -208,8 +208,7 @@
         </div>
       </nav>
     </header>
-
-    
+    <!--=========================================================================================================-->
     <!--TELEFONOS iphone-->
     <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
       <div class="container">
@@ -217,17 +216,18 @@
           <div class="display-header d-flex justify-content-between pb-3">
             <h2 class="display-7 text-dark text-uppercase margare ">IPhone</h2>
           </div>
+          <!--=========================================================================================================-->
           <!--IMAGEN CELULAR 1-->
           <div class="swiper product-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="product-card position-relative">
+                <div class="product-card position-relative" id="producto-1">
                   <div class="image-holder">
                     <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                      <a href="#" class="btn btn-medium btn-black" data-product-id="1">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
@@ -240,7 +240,7 @@
               </div>
               <!--CELULAR 2-->
               <div class="swiper-slide">
-                <div class="product-card position-relative">
+                <div class="product-card position-relative" id="producto-2">
                   <div class="image-holder">
                     <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
                   </div>
@@ -544,6 +544,7 @@
       </div>
       <div class="swiper-pagination position-absolute text-center"></div>
     </section>
+    
     <!--FOOTER-->
     <footer id="footer" class="overflow-hidden">
       <div class="container">
@@ -685,6 +686,7 @@
           </div>
         </div>
       </div>
+    </div>
     
     <!--JAVA NO SACAR-->
     <script src="js/jquery-1.11.0.min.js"></script>
