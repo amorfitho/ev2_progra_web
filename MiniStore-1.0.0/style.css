@@ -1032,5 +1032,5 @@ figure.instagram-item img.insta-image {
    width: 20px;
    aspect-ratio: 1;
    text-align: center;
-
+   position: absolute;
   }
