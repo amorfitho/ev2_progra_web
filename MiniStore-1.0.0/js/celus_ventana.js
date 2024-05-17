@@ -1,32 +1,28 @@
 const celus =[
     {
-        id:1,
+        id:product-item1,
         nombre: "Iphone 10",
-        img: "product-item1",
+        img: "product-item1.jpg",
         precio:980,
     },
     {
-        id:2,
+        id:product-item2,
         nombre: "Iphone 11",
-        img: "product-item2",
         precio:980,
     },
     {
-        id:3,
+        id:product-item3,
         nombre: "Iphone 12",
-        img: "product-item2",
         precio:980,
     },
     {
-        id:4,
+        id:product-item4,
         nombre: "Iphone 13",
-        img: "product-item3",
         precio:980,
     },
     {
-        id:5,
+        id:product-item5,
         nombre: "Iphone 14",
-        img: "product-item4",
         precio:980,
     }
 ]
