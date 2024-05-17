@@ -16,9 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- script
-    ================================================== -->
+    <!-- script================================================== -->
     <script src="js/modernizr.js"></script>
+    <script src="app.js" defer></script>
   </head>
   <!-- INICIO DEL BODY-->
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
@@ -193,10 +193,11 @@
                       </li>
                       <!--CARRITO-->
                       <li>
-                        <a href="carrito.html">
+                        <a href="#">
                           <svg class="cart">
                             <use xlink:href="#cart"></use>
                           </svg>
+                          <span cuenta-arrito>0</span>
                         </a>
                       </li>
                     </ul>
@@ -221,16 +222,16 @@
           <div class="swiper product-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="product-card position-relative" id="producto-1">
+                <div class="product-card position-relative producto-1" id="producto-1">
                   <div class="image-holder">
                     <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black" data-product-id="1">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                      <button href="#" class="btn btn-medium btn-black" onclick="addToCart('Iphone 10', $100)" data-product-id="1">annadir carrito<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></svg></button>
                     </div>
                   </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3 ">
                     <h3 class="card-title text-uppercase">
                       <a href="#">Iphone 10</a>
                     </h3>

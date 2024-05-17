@@ -40,6 +40,7 @@ CSS STRUCTURE:
   --navbar-color-color:       #131814;
   --swiper-theme-color:       #4A4A4A;
   --swiper-pagination-color:  #4A4A4A;
+  --color-acento:#ee6130;
 
 }
 
@@ -1023,3 +1024,13 @@ figure.instagram-item img.insta-image {
 .margare{
   padding-top: 7em;
 }
+
+#cuenta-arrito{
+  background-color: var(--color-acento);
+   border-radius: 100%;
+   display: inline-block;
+   width: 20px;
+   aspect-ratio: 1;
+   text-align: center;
+
+  }
