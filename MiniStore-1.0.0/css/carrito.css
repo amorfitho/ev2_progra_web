@@ -1,0 +1,26 @@
+#productos-container{
+    width: 500px;
+    margin: auto;
+
+}
+
+
+.targeta-producto{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.targeta-producto img{
+    height: 150px;
+    aspect-ratio: 1.5;
+}
+
+.targeta-producto h3{
+    width: 130px;
+}
+
+#totales{
+    text-align: center;
+}
